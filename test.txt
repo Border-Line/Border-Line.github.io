@@ -1,3 +1,0 @@
-﻿肮脏的PY交易.
-This is my first git test.
-I like Git!
