@@ -1,0 +1,258 @@
+/* 
+* @Author: Marte
+* @Date:   2016-09-23 13:52:40
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-09-24 21:46:34
+*/
+body{
+
+    font-family: 'Inziu IosevkaCC SC';
+    margin: 0;
+}
+.conatiner{
+    background-image: url(new.jpg);
+    background-size:cover;
+    background-position:bottom bottom;
+    width:100%;
+    height:450px;
+    min-width: 870px;
+}
+._blur-content{
+    position:relative;
+    background: inherit; 
+    height:30px;
+    width:100%;
+    overflow:hidden;
+    box-shadow: 0 0 1px black;
+}
+
+._blur{
+    height:50px;
+    position:absolute;
+    width:100%;
+    background: inherit; 
+    filter: blur(4px);
+}
+
+.just-black{
+    height:50px;
+    position:absolute;
+    width:120%;
+    background: rgba(0, 0, 0, 0.48); 
+}
+
+.title-content{
+    position:relative;
+    height:30px;
+}
+.username{
+    float:left;
+    width:320px;
+}
+
+h1,.username>p,ul{
+    font-family: 'Inziu IosevkaCC SC';
+    color:#fff;
+    margin:0;
+}
+h1{
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #56321e;
+    width:50px;
+    line-height: 30px;
+    float:left;
+    font-size: 1.2em;
+}
+.username>p{
+    margin-left: 60px;
+    line-height: 30px;
+    font-size: 0.8em;
+    color:#afafaf;
+}
+
+.nav{
+
+    float:right;
+    width:530px;
+}
+ul{
+    float:right;
+    margin:0;
+}
+li{  
+    float:left;
+    display: inline-block;
+    padding:0 15px;
+    font-size: 1em;
+    opacity:0.8;
+    line-height: 30px;
+    transition:background-color 0.3s,color 0.2s;
+}
+
+a{  
+    color:gray;
+    text-decoration: none;
+}
+li a{  
+    display:inline-block;
+    color:white;
+    text-decoration: none;
+}
+li:hover{
+    color:#473b69;
+    background-color: #fff;
+}
+li:hover a{
+    color:#473b69;
+}
+
+.face-content{
+    position: relative;
+    width:100%;
+    height:400px;
+}
+.inner-content{
+    position:relative;
+    margin:0 auto;
+    top:70px;
+    width:220px;
+    height:220px;
+    background-color: #a1a1a1;
+    border-radius: 50%;
+}
+
+.face,.just-white,.bigger-white{
+    width:180px;
+    height:180px;
+    border-radius: 50%;
+    position:absolute;
+    top: 20px;
+    left:20px;
+    background-color: #fff;
+} 
+
+.face>img{
+     position:relative;
+     top:-1px;
+     left:-1px;
+     height:182px;
+     width:182px;
+     border-radius: 50%;
+     display:block;
+     margin:0 auto;
+     transition:opacity 1s;
+}
+.inner-content:hover img{
+    opacity:0;
+}
+.bigger-white{
+    position:relative;
+    width:280px;
+    height:280px;
+    top:-30px;
+    left: -30px;
+    opacity:0;
+    transition:opacity 0.3s,width 0.3s,top 0.3s,left 0.3s,height 0.3s;
+}
+.inner-content:hover .bigger-white{
+    opacity:1;
+    width:182px;
+    height:182px;
+    top:19px;
+    left:19px;
+}
+
+.centeral>p:first-child{
+    text-align: center;
+    font-family: 'Inziu IosevkaCC SC';
+    font-size: 6em;
+    color:#fff;
+    position:relative;
+    top:40px;
+}
+.centeral>p:last-child{
+    text-align: center;
+    font-family: 'Inziu IosevkaCC SC';
+    font-size: 1em;
+    color:#e4e2e2;
+    position:relative;
+    top:-65px;
+}
+
+
+.hello{
+    margin:0 auto;
+    padding: 40px 0 10px 0;
+    width:80px;
+    text-align:center;
+    font-weight: bold;
+}
+.conatiner2{
+    font-family: 'Inziu IosevkaCC SC';
+    width:70%;
+    margin:0px auto;
+    padding:0 0 20px 0;
+}
+h2{ 
+    margin:0;
+    line-height: 30px;
+    color:#473b69;
+    font-size: 1.8em;
+    font-weight:700;
+}
+
+.conatiner2 a{
+    font-size: 0.9em;
+    background-color: #fff;
+    text-align: center;
+    font-weight:600;
+    color:#8476ad;
+    border-radius: 4px;
+    line-height: 2.5em;
+    display:block;
+    width:140px;
+    border:1px solid #8476ad;
+    transition:background-color 0.3s,color 0.3s;
+}
+.conatiner2 a:hover{
+    background-color: #8476ad;
+    color:#fff;
+}
+.conatiner2>div{
+
+    padding:30px 0;
+    border-bottom:1px solid #ddd;
+}
+.conatiner2>div:last-child{
+    border:none;
+
+}
+.poem p{
+        line-height: 1.3em;
+        font-family: 'Inziu IosevkaCC SC';
+        font-size: 1em;
+        letter-spacing: 4px;
+        color:#464646;
+}
+span{
+    color:#464646;
+    font-size: 0.6em;
+}
+
+.footer{
+    border-top:1px solid #ddd;
+    padding-top: 10px;
+    width:100%;
+    background-color: #eee;
+    height:30px;
+    text-align:center;
+    font-weight: 600;
+
+}
+.footer>p{
+    margin:0;
+    color:#8476ad;
+}
+
+
