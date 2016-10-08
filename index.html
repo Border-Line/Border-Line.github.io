@@ -2,9 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css/test2.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
     </head>
     <body>
+    <div class="bground"></div>
     <div class="conatiner">
     <div class="_blur-content">
        <div class="_blur"></div>
@@ -15,12 +16,12 @@
                  <p>来自地球某处的程序员.</p></div>
             <div class="nav">
                 <ul>
-                    <li><a href="#blog">博客</a></li>
-                    <li><a href="#">小作品</a></li>
-                    <li><a href="#">微博</a></li>
+<!--                     <li><a href="#blog">博客</a></li> -->
+                    <li><a href="#project">DEMO</a></li>
+<!--                     <li><a href="#">微博</a></li> -->
                     <li><a href="#">Github</a></li>
  <!--                    <li><a href="#">Instagram</a></li>
- -->                <li><a href="#">关于</a></li>
+ -->                <li><a href="#about">关于</a></li>
                 </ul>
                 </div>
                 </div>
@@ -44,21 +45,54 @@
         </div>
        </div>
     </div>
-    <div class="conatiner2" id="blog">
-       <div class="poem">
-            <h2>明湖赋<span>&nbsp&nbsp张大帅</span></h2>
-            <p>大明湖，明湖大，大明湖裡有荷花，荷花上面有蛤蟆，一戳一蹦達。</p>
-            <a href="#">更多</a>
+    <div class="conatiner2" id="about">
+      <div class="poem">
+            <h2>关于我</h2>
+            <p>
+                我叫庄帝汉<br />
+                就读广东工业大学<br />
+                17届毕业生<br />
+                想做一枚前端工程师
+            </p>
+            <a href="#">更多信息</a>
         </div>
-                <div class="poem">
-            <h2>记承天寺夜游<span>&nbsp&nbsp苏轼</span></h2>     
-            <p>元丰六年十月十二日夜，解衣欲睡，月色入户，欣然起行。念无与为乐者，遂至承天寺寻张怀民。怀民亦未寝，相与步于中庭。庭下如积水空明，水中藻、荇（xìng）交横（héng），盖竹柏影也。何夜无月？何处无竹柏？但少闲人如吾两人者耳。</p>
-            <a href="#">更多</a>
-        </div>
-  
     </div>
+      <div class="conatiner3" id="project">  
+        <h2>一些DEMO</h2>
+        <div id="moon" class="project">
+            <div class="hover">
+                <a href="sun&moon.html" target=_blank>moon</a>
+            </div>
+        <p class="inner-text"></p>
+         </div>
+        <div id="todo" class="project">
+            <div class="hover">
+            <a href="Todo.html" target=_blank>todo</a>
+            </div>
+        <p class="inner-text"></p>
+        </div>
+        <div id="kumamon" class="project">
+            <div class="hover">
+            <a href="kumamon.html" target=_blank>kumamon</a>
+            </div>
+        <p class="inner-text"></p>
+         </div>
+        <div id="mall" class="project">
+            <div class="hover">
+            <a href="#" target=_blank>mall</a>
+            </div>
+        <p class="inner-text"></p>
+        </div>
+        <div class="cmore">
+            <a href="#" id="cmore">待续...</a>
+        </div>
+              </div>
     <div class="footer">
         <p>联系我</p>
     </div>
+    <script type="text/javascript">
+    var cmore=document.getElementById("cmore");
+    cmore.onclick="alert('待续...')";
+    </script>
     </body>
 </html>

@@ -1,0 +1,169 @@
+/* 
+* @Author: Marte
+* @Date:   2016-09-03 09:36:23
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-09-19 22:52:57
+*/
+*{  position: fixed;
+    margin: 0px;
+    padding:0px;
+}
+body{background-color: #171821;
+}
+.content{
+    position: fixed;
+    left:600px;
+    top:250px;
+    width: 150px;
+    height:150px;
+    animation:deg 5s infinite  linear; 
+   
+}
+
+.sun{
+    background-color:#FEAD03;
+    position:absolute;
+    width:150px;
+    height:150px;
+    border-radius:50%;
+}
+.moon{
+    background-color: #fff;
+    background-color: #171821;
+    position:absolute;
+    left:-150px;
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    animation:run 5s infinite alternate linear,raise 5s infinite alternate linear;
+}
+.stars1,.stars2,.stars3,.stars4,.stars5,.stars6,.stars7,.stars8,.stars9,.stars10{
+    position: relative;
+    top:-30px;
+    left:-20px;
+    background-color: #FEAD03;
+    width:4px;
+    height:3px;
+    border-radius: 50%;
+    animation:blink 3s infinite alternate;
+}
+
+.stars2{
+    position: relative;
+    top:-70px;
+    left:-100px;
+    animation:blink 8s infinite alternate;
+}
+.stars3{
+    position: relative;
+    top:55px;
+    left:350px; 
+    width:5px;
+    height:3px;
+    animation:blink 1s infinite alternate;
+     
+}
+.stars4{
+    position: relative;
+    top:120px;
+    left:-20px;  
+    animation:blink 7s infinite alternate; 
+}
+.stars5{
+    position: relative;
+    top:100px;
+    left:-70px;  
+    
+}
+
+.stars6{
+    position: relative;
+    top:130px;
+    left:-31px;  
+    width:2px;
+    height:3px;
+    animation:blink 4s infinite alternate;
+    
+}
+
+.stars7{
+    position: relative;
+    top:-100px;
+    left:133px;  
+}
+
+.stars8{
+    position: relative;
+    top:-140px;
+    left:160px; 
+    width:2px;
+    height:2px;
+    animation:blink 1s infinite alternate;
+    
+}
+
+.stars9{
+    position: relative;
+    top:-60px;
+    left:250px;  
+}
+
+.stars10{
+    position: relative;
+    top:170px;
+    left:170px; 
+    width:5px;
+    height:3px;
+    animation:blink 5s infinite alternate;
+   
+}
+@-webkit-keyframes color{
+            0%{background-color:white ;
+            }
+            50%{background-color: #0a0a0a;
+            }
+            100%{
+                background-color:white ;
+            }
+        }
+@-webkit-keyframes run{
+    0%{
+        left:-150px;
+    }
+    100%{
+        left:150px;
+    }
+}
+@-webkit-keyframes raise{
+
+    0%{
+        top:-80px;
+    }
+
+    100%{
+        top:70px;
+    }
+    
+        }
+@-webkit-keyframes blink{
+
+            0%{background-color:#171821;
+            }
+            50%{background-color: yellow;
+            }
+            100%{
+                background-color:#171821;
+            }  
+    }
+    
+@-webkit-keyframes deg{
+
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(180deg);
+    }
+    
+        }
