@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2016-09-23 13:52:40
 * @Last Modified by:   Marte
-* @Last Modified time: 2016-10-08 16:45:43
+* @Last Modified time: 2016-10-08 18:48:03
 */
 body{
 
@@ -10,7 +10,7 @@ body{
     margin: 0;
 }
 .conatiner{
-    background-image: url(../images/new.jpg);
+    background-image: url(../images/new.png);
     background-size:cover;
     background-position:bottom bottom;
     width:100%;
